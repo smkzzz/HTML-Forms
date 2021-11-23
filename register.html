@@ -1,12 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link href="style.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="register.html" class="register" method="post">
+        <h1>Register</h1>
+        <fieldset>
+          <legend>Basic Info</legend>
+          <label for="name">First Name:</label>
+          <input
+            type="text"
+            id="first_name"
+            placeholder="John"
+            autocomplete="off"
+            name="first_name"
+          />
+
+          <label for="middle_name">Middle Name:</label>
+          <input
+            type="text"
+            placeholder="Doee"
+            id="middle_name"
+            name="middle_name"
+            autocomplete="off"
+          />
+
+          <label for="family_name">Family Name:</label>
+          <input
+            type="text"
+            placeholder="Doe"
+            id="family_name"
+            name="family_name"
+            autocomplete="off"
+          />
+
+          <label for="email">Email: </label>
+          <input
+            type="email"
+            id="email"
+            autocomplete="off"
+            placeholder="e.g. youremail@example.com"
+          />
+
+          <label for="home">Home Address: </label>
+          <textarea id="home" placeholder="J. Alcantra Street"></textarea>
+
+          <div class="sectit">Gender:</div>
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="female">Female</label><br />
+
+          <input type="radio" id="male" name="gender" value="male" />
+          <label for="male">Male</label><br /><br />
+
+          <div class="sectit">Hobbies:</div>
+          <input
+            type="checkbox"
+            id="computer"
+            name="hobbies"
+            value="computer"
+          />
+          <label for="computer">Computer Games</label><br />
+
+          <input type="checkbox" id="music" name="hobbies" value="music" />
+          <label for="music">Playing Music Instruments</label><br />
+
+          <input type="checkbox" id="cooking" name="hobbies" value="cooking" />
+          <label for="cooking">Cooking</label><br/>
+
+          <input type="checkbox" id="drawing" name="hobbies" value="drawing" />
+          <label for="drawing">Drawing</label><br/><br/>
+          
+          <label for="about">Say something about yourself.</label>
+          <textarea id="about" name="about" placeholder="I am a..."></textarea>
+          <div class="footer">
+            <button type="submit" class="btn btn-success">Submit</button>
+            <button type="reset" class="btn btn-danger">Reset</button>
+          </div>
+        </fieldset>
+
+        
+      </form>
+    </div>
+  </body>
 </html>
